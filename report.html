@@ -15957,6 +15957,7 @@ kbChpCciImFDSU9ERMLG/wPWGwNUC+RFtAAAAABJRU5ErkJggg==
 <p>When the model is trained with a maximum depth of 1, the model suffers from high bias. Because, we can see that the training and variation scores converges at lower score (approx. 0.4). It means that the accuracy of the model is 40%. From this we can derive to a conclusion that the model has underfit the data and is very simple, it should have considered more features.</p>
 <p>For <code>max_depth 10</code>, the model suffers from high variance. The visual cues in the graph represent huge difference between the training and validation scores. This is representation of variance, we can come to the following conclusion. Increasing the amount of training data, will reduce the variance. Also, the model has taken too many features into account for the training.</p>
 <p>From the given graph, the best depth we can use to train our model is either 3 or 4. Because they converge at a higher performance score.</p>
+<p>source: sklearn documentation</p>
 
 </div>
 </div>
@@ -16031,6 +16032,7 @@ kbChpCciImFDSU9ERMLG/wPWGwNUC+RFtAAAAABJRU5ErkJggg==
 <p>In the above parameters, say if we want to try out different krenals for the same problem, we can assign different kernals such as 'rbf','linear', 'poly', GridSearchCV will compute and reply back the scores for each of these kernals.</p>
 <p>We can also use different values of C for SVM ranging from [0 to 1]. So whatever parameters we would like to try to train the model with, we can do it in one go and wait for the training to complete.</p>
 <p>GridSearchCV will populate the scores for each combination and we can select the bast one based on accuracy and speed.</p>
+<p>source: sklearn documentation</p>
 
 </div>
 </div>
@@ -16065,7 +16067,7 @@ kbChpCciImFDSU9ERMLG/wPWGwNUC+RFtAAAAABJRU5ErkJggg==
 <hr>
 <p>Combining with GridSearch, we can select tuning parameters, choosing between the models and the features. 
 Given the estimator and parameter to the GridSearch, it helps us choose parameters in such a way that the cross-validation score is maximum.</p>
-<p>The primary advantage of using grid search alongside with k-fold cross-validation, all observations are used for both training and validation, and each observation is used for validation exactly once. We're ensured that we're using the entire dataset for training and validation, and that we're not overoptimizing to perform well towards the single validation set that was selected.</p>
+<p>source: wikipedia, sklearn documentation</p>
 
 </div>
 </div>
